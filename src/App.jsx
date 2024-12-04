@@ -5,7 +5,8 @@ function App() {
   
 
   return (
-    <div className='App'>
+    <div className='App bg-red-600'>
+
       <h2>Deekshith's Portfolio</h2>
     </div>
   )
