@@ -14,6 +14,8 @@ module.exports = {
       },
       transitionProperty: {
         'filter': 'filter',
+        'top': 'top',
+        'left': 'left',
       },
     },
     plugins: [tailwindScrollbar],
