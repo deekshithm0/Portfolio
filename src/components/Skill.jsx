@@ -57,7 +57,7 @@ const Skill = () => {
           exceptional, high-performing websites & applications.
         </p>
 
-        <div className="grid gap-3 grid-cols-[repeat(auto-fill, minmax(250px, 1fr))]">
+        <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {
             skillItems.map(({ imgSrc, label, desc }, key) =>(
                 <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} />
