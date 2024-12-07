@@ -18,7 +18,7 @@ const socialLinks = [
     )
   },
   {
-    href: 'www.linkedin.com/in/deekshithmannarakkal',
+    href: 'https://www.linkedin.com/in/deekshithmannarakkal/',
     label: 'LinkedIn',
     icon: (
       <svg
@@ -48,72 +48,109 @@ const socialLinks = [
         />
       </svg>
     )
+  },
+  {
+    href: 'https://instagram.com/_________mr.d',
+    label: 'Instagram',
+    icon: (
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 32 32'
+        class='w-6 h-6'
+      >
+        <path
+          fill='#E1306C'
+          d='M16 0C7.163 0 0 7.164 0 16s7.163 16 16 16 16-7.164 16-16-7.163-16-16-16zm0 30C8.268 30 2 23.732 2 16S8.268 2 16 2s14 6.268 14 14-6.268 14-14 14zm6.5-16.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5 1.673-1.5 1.5-1.5c.827 0 1.5.673 1.5 1.5zm-6.5 3.5c-3.033 0-5.5-2.467-5.5-5.5s2.467-5.5 5.5-5.5 5.5 2.467 5.5 5.5-2.467 5.5-5.5 5.5zm0-8c-1.379 0-2.5 1.121-2.5 2.5s1.121 2.5 2.5 2.5 2.5-1.121 2.5-2.5-1.121-2.5-2.5-2.5zm0 0zm0 0'
+        />
+      </svg>
+    )
   }
 ]
 
 const Contact = () => {
   return (
-    <section id='contact' className="section">
-        <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
+    <section id='contact' className='section'>
+      <div className='container lg:grid lg:grid-cols-2 lg:items-stretch'>
+        <div className='mb-12 lg:mb-0 lg:flex lg:flex-col'>
+          <h2 className='headline-2 lg:max-w-[12ch]'>
+            Contact me for collaboration
+          </h2>
 
-            <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
+          <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]'>
+            Reach out today to discuss your project needs and collaborating on
+            something amazing!
+          </p>
 
-                <h2 className="headline-2 lg:max-w-[12ch]">
-                    Contact me for collaboration
-                </h2>
+          <div className='flex items-center gap-2 mt-auto'>
+            {socialLinks.map(({ href, icon }, key) => (
+              <a
+                key={key}
+                href={href}
+                target='_blank'
+                className='w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-colors hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80'
+              >
+                {icon}
+              </a>
+            ))}
+          </div>
+        </div>
 
-                <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
-                    Reach out today to discuss your project needs and collaborating on something amazing!
-                </p>
+        <form action='' method='POST' className='xl:pl-10 2xl:pl-20'>
+          <div className='md:grid md:items-center md:grid-cols-2 md:gap-2'>
+            <div className='mb-4'>
+              <label htmlFor='name' className='label'>
+                Name
+              </label>
 
-                <div className="flex items-center gap-2 mt-auto">
-                    {socialLinks.map(({ href, icon}, key) => (
-                        <a key={key} href={href} target='_blank' className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-colors hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80">
-                            {icon}
-                        </a>
-                    ))}
-                </div>
-
+              <input
+                type='text'
+                name='name'
+                id='name'
+                autoComplete='name'
+                placeholder='Enter name'
+                required
+                className='text-field'
+              />
             </div>
 
-            <form action="" method='POST' className="xl:pl-10 2xl:pl-20">
-                <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
-                    <div className="mb-4">
-                        <label htmlFor="name" className="label">
-                            Name
-                        </label>
+            <div className='mb-4'>
+              <label htmlFor='email' className='label'>
+                Email
+              </label>
 
-                        <input type="text" name='name' id='name' autoComplete='name' placeholder='Enter name' required className="text-field" />
-                    </div>
+              <input
+                type='email'
+                name='email'
+                id='email'
+                autoComplete='email'
+                placeholder='emailid@example.com'
+                required
+                className='text-field'
+              />
+            </div>
+          </div>
 
-                    <div className="mb-4">
-                        <label htmlFor="email" className="label">
-                            Email
-                        </label>
+          <div className='mb-4'>
+            <label htmlFor='message' className='label'>
+              Message
+            </label>
 
-                        <input type="email" name='email' id='email' autoComplete='email' placeholder='emailid@example.com' required className="text-field" />
-                    </div>
-                </div>
+            <textarea
+              name='message'
+              id='message'
+              placeholder='Hi, leave me a message!'
+              className='text-field resize-y min-h-32 max-h-80'
+            ></textarea>
+          </div>
 
-                <div className="mb-4">
-
-                    <label htmlFor="message" className="label">
-                        Message
-                    </label>
-
-                    <textarea name="message" id="message" placeholder='Hi, leave me a message!' className="text-field resize-y min-h-32 max-h-80">
-
-                    </textarea>
-
-                </div>
-                
-                <button type='submit' className="btn btn-primary [&]:max-w-full w-full justify-center">
-                    Submit
-                </button>
-
-            </form>
-
-        </div>
+          <button
+            type='submit'
+            className='btn btn-primary [&]:max-w-full w-full justify-center'
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
   )
 }
