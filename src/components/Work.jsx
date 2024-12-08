@@ -19,14 +19,20 @@ const works = [
     title: 'Project 3',
     tags: ['API', 'MVC'],
     projectLink: 'https://projectlink.com'
+  },
+  {
+    imgSrc: '/images/project-4.jpg',
+    title: 'Project 4',
+    tags: ['API', 'MVC'],
+    projectLink: 'https://projectlink.com'
   }
 ]
 
 const Work = () => {
   return (
     <section id='work' className='section'>
-      <div className='container'>
-        <h2 className='headline-2'>My Portfolio Highlights</h2>
+      <div className='container flex flex-col items-center justify-center'>
+        <h2 className='headline-2 pb-4'>My Portfolio Highlights</h2>
 
         <div className='grid gap-x-4 gap-y-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {works.map(({ imgSrc, title, tags, projectLink }, key) => (

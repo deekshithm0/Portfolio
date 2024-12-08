@@ -8,7 +8,7 @@ const socialLinks = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 32 32'
-        class='w-6 h-6'
+        className='w-6 h-6'
       >
         <path
           fill='#000'
@@ -24,7 +24,7 @@ const socialLinks = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 32 32'
-        class='w-6 h-6'
+        className='w-6 h-6'
       >
         <path
           fill='#0077B5'
@@ -40,7 +40,7 @@ const socialLinks = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 32 32'
-        class='w-6 h-6'
+        className='w-6 h-6'
       >
         <path
           fill='#25D366'
@@ -56,7 +56,7 @@ const socialLinks = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 32 32'
-        class='w-6 h-6'
+        className='w-6 h-6'
       >
         <path
           fill='#E1306C'

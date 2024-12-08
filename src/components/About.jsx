@@ -3,11 +3,11 @@ import React from 'react'
 const aboutItems = [
   {
     label: 'Project done',
-    number: 45
+    number: 4
   },
   {
     label: 'Year of experience',
-    number: 3
+    number: 1
   }
 ]
 
@@ -17,31 +17,44 @@ const About = () => {
       <div className='container'>
         <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12'>
           <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]'>
-            Dynamic Fullstack Developer specializing in the MERN stack, with a
-            proven track record of creating engaging and high-performance web
-            applications. Skilled in crafting responsive and intuitive user
-            interfaces with React, while developing robust back-end solutions
-            using Node.js, Express, and MongoDB. Passionate about delivering
-            seamless user experiences through clean, efficient code and
-            innovative problem-solving.
+            Hello! I'm Deekshith M, a passionate Full Stack Developer
+            specializing in the MERN stack. with extensive experience delivering
+            high-performance web solutions for clients across diverse business
+            sectors. <br /> <br /> My expertise lies in building responsive, user-centric
+            applications using React, Node.js, Express, and MongoDB. Having
+            worked on multiple live projects, I excel at transforming ideas into
+            impactful digital solutions that enhance user engagement and
+            operational efficiency. <br /> <br /> My work ranges from modernizing restaurant
+            operations to creating intuitive interfaces that elevate business
+            branding. Committed to clean, efficient code and innovative
+            problem-solving, I focus on crafting seamless user experiences that
+            align with business goals. Let’s work together to bring your vision
+            to life.
           </p>
 
-          <div className='flex flex-wrap items-center gap=4 md:gap-7'>
-            {
-                aboutItems.map(( { label, number }, key ) => (
-                    <div key={key}>
-                        <div className="flex items-center md:mb-2">
-                            <span className="text-2xl font-semibold md:text-4xl">{number}</span>
-                            <span className="text-sky-400 font-semibold md:text-3xl">+</span>
-                        </div>
+          <div className='flex flex-wrap items-center gap-4 md:gap-7'>
+            {aboutItems.map(({ label, number }, key) => (
+              <div key={key}>
+                <div className='flex items-center md:mb-2'>
+                  <span className='text-2xl font-semibold md:text-4xl'>
+                    {number}
+                  </span>
+                  <span className='text-sky-400 font-semibold md:text-3xl'>
+                    +
+                  </span>
+                </div>
 
-                        <p className="text-sm text-zinc-400">{label}</p>
-                    </div>
-                ))
-            }
+                <p className='text-sm text-zinc-400'>{label}</p>
+              </div>
+            ))}
 
-
-            <img src="/images/logo.svg" alt="Logo" width={30} height={30} className="ml-auto md:w-[40px] md:h-[40px]" />
+            {/* <img
+              src='/images/logo.svg'
+              alt='Logo'
+              width={30}
+              height={30}
+              className='ml-auto md:w-[40px] md:h-[40px]'
+            /> */}
           </div>
         </div>
       </div>

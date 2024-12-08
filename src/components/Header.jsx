@@ -12,7 +12,7 @@ const Header = () => {
                 <h1>
                     <a href="/" className='logo'>
                         {/* <img src="/images/logo.svg" width={40} height={40} alt="logo" /> */}
-                        <h2 className='headline-2'>DEEKSHITH</h2>
+                        <h6 className='headline-name'>DEEKSHITH</h6>
                     </a>
                 </h1>
 

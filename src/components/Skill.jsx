@@ -1,23 +1,11 @@
 import React from 'react'
 import SkillCard from './SkillCard'
 
-
-
 const skillItems = [
   {
-    imgSrc: '/images/figma.svg',
-    label: 'Figma',
-    desc: 'Design tool'
-  },
-  {
-    imgSrc: '/images/css3.svg',
-    label: 'CSS3',
-    desc: 'Frontend Styling'
-  },
-  {
-    imgSrc: '/images/javascript.svg',
-    label: 'JavaScript',
-    desc: 'Frontend Development'
+    imgSrc: '/images/react.svg',
+    label: 'React',
+    desc: 'Frontend Framework'
   },
   {
     imgSrc: '/images/nodejs.svg',
@@ -35,9 +23,24 @@ const skillItems = [
     desc: 'Database Management'
   },
   {
-    imgSrc: '/images/react.svg',
-    label: 'React',
-    desc: 'Frontend Framework'
+    imgSrc: '/images/github.svg',
+    label: 'GitHub',
+    desc: 'Version Control'
+  },
+  {
+    imgSrc: '/images/figma.svg',
+    label: 'Figma',
+    desc: 'Design tool'
+  },
+  {
+    imgSrc: '/images/css3.svg',
+    label: 'CSS3',
+    desc: 'Frontend Styling'
+  },
+  {
+    imgSrc: '/images/javascript.svg',
+    label: 'JavaScript',
+    desc: 'Frontend Development'
   },
   {
     imgSrc: '/images/tailwindcss.svg',
@@ -49,22 +52,19 @@ const skillItems = [
 const Skill = () => {
   return (
     <section className='section'>
-      <div className='container'>
+      <div className='container flex flex-col items-center'>
         <h2 className='headline-2'>Essential Tools I Use</h2>
 
-        <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch]'>
+        <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch] text-center'>
           Discover the powerful tools and technologies I use to create
           exceptional, high-performing websites & applications.
         </p>
 
-        <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        {
-            skillItems.map(({ imgSrc, label, desc }, key) =>(
-                <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} />
-            ) )
-        }
+        <div className='grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+          {skillItems.map(({ imgSrc, label, desc }, key) => (
+            <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} />
+          ))}
         </div>
-
       </div>
     </section>
   )
