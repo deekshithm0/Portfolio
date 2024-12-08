@@ -3,7 +3,7 @@ import React from 'react'
 const aboutItems = [
   {
     label: 'Project done',
-    number: 4
+    number: 3
   },
   {
     label: 'Year of experience',
@@ -15,8 +15,9 @@ const About = () => {
   return (
     <section id='about' className='section'>
       <div className='container'>
-        <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12'>
-          <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]'>
+        <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12 '>
+        <h2 className='headline-2 mb-8'>About Me</h2>
+          <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch] reveal-up'>
             Hello! I'm Deekshith M, a passionate Full Stack Developer
             specializing in the MERN stack. with extensive experience delivering
             high-performance web solutions for clients across diverse business

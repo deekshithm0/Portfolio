@@ -41,11 +41,11 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className='section'>
+    <footer className='section pb-20'>
       <div className='container mb-4'>
         <div className='lg:grid lg:grid-cols-2'>
           <div className='mb-10'>
-            <h2 className='headline-1 mb-8 lg:max-w-[12ch]'>
+            <h2 className='headline-1 mb-8 lg:max-w-[12ch] reveal-up'>
               Let&apos;s work together today!
             </h2>
 
@@ -65,7 +65,7 @@ const Footer = () => {
                   <li key={key}>
                     <a
                       href={href}
-                      className='block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200'
+                      className='block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up'
                     >
                       {label}
                     </a>
@@ -83,7 +83,7 @@ const Footer = () => {
                     <a
                       href={href}
                       target='_blank'
-                      className='block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200'
+                      className='block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up'
                     >
                       {label}
                     </a>

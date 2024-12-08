@@ -107,3 +107,6 @@ body {
 }
 
 
+.reveal-up{
+  @apply translate-y-20 opacity-0
+}

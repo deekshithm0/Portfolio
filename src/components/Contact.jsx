@@ -71,17 +71,17 @@ const Contact = () => {
   return (
     <section id='contact' className='section'>
       <div className='container lg:grid lg:grid-cols-2 lg:items-stretch'>
-        <div className='mb-12 lg:mb-0 lg:flex lg:flex-col'>
-          <h2 className='headline-2 lg:max-w-[12ch]'>
+        <div className='mb-12 lg:mb-0 lg:flex lg:flex-col reveal-up'>
+          <h2 className='headline-2 lg:max-w-[12ch] '>
             Contact me for collaboration
           </h2>
 
-          <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]'>
+          <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up'>
             Reach out today to discuss your project needs and collaborating on
             something amazing!
           </p>
 
-          <div className='flex items-center gap-2 mt-auto'>
+          <div className='flex items-center gap-2 mt-auto reveal-up'>
             {socialLinks.map(({ href, icon }, key) => (
               <a
                 key={key}
