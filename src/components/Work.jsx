@@ -4,9 +4,9 @@ import ProjectCard from './ProjectCard'
 const works = [
   {
     imgSrc: '/images/almango.jpg',
-    title: 'Project 1',
-    tags: ['API', 'MVC', 'Development'],
-    projectLink: 'https://projectlink.com'
+    title: 'Al-Mango Food Menu App',
+    tags: ['React','Router', 'Hooks'],
+    projectLink: 'https://almango.netlify.app/'
   },
   {
     imgSrc: '/images/project-2.jpg',
