@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 
 const works = [
   {
-    imgSrc: '/images/project-1.jpg',
+    imgSrc: '/images/almango.jpg',
     title: 'Project 1',
     tags: ['API', 'MVC', 'Development'],
     projectLink: 'https://projectlink.com'
