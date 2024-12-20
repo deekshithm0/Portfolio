@@ -19,7 +19,9 @@ const Navbar = ({ navOpen }) => {
     window.addEventListener('resize', initActiveBox)
 
     const activeCurrentLink = (event) => { 
-        lastActiveLink.current ?. classList.remove('active');
+        lastActiveLink.current ?. classList.remove('active');{
+            
+        }
         event.target.classList.add('active');
         lastActiveLink.current = event.target;
 
