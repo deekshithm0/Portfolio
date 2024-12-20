@@ -34,7 +34,7 @@ const skillItems = [
   },
   {
     imgSrc: '/images/css3.svg',
-    label: 'CSS3',
+    label: 'CSS',
     desc: 'Frontend Styling'
   },
   {
